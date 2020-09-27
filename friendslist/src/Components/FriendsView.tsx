@@ -1,5 +1,6 @@
 import { Button, Grid } from '@material-ui/core';
 import React from 'react';
+import FriendsItem from './FriendsItem';
 
 function FriendsView() {
     const friends = ["Diego", "Gus", "Pedro", "Steven","RJ"]
@@ -10,7 +11,12 @@ function FriendsView() {
                 friends.map((friend:string) => {
                     return (
                     <Grid item xs={12}>
-                        <p> {friend} </p>
+                        <FriendsItem 
+                            name={friend}
+                            relation="whatever"
+                            time={4}
+                            picLink="1.jpg"
+                        />
                     </Grid>
                     )
                 })
