@@ -15,7 +15,8 @@ function FriendsView() {
                             name={friend}
                             relation="whatever"
                             time={4}
-                            picLink="1.jpg"
+                            picLink="https://ichef.bbci.co.uk/news/800/cpsprodpb/16620/production/_91408619_55df76d5-2245-41c1-8031-07a4da3f313f.jpg"
+                            favorited={true}
                         />
                     </Grid>
                     )
