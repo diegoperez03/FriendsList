@@ -24,3 +24,9 @@ margin-top: 12px;
 .lastContactedIcon {
     margin-top: 12px; 
 }
+
+.FriendsView {
+    overflow-y: scroll;
+    height: 70vh;
+    margin-bottom: 16px;
+}
