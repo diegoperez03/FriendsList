@@ -4,7 +4,7 @@ import FriendsItem from './FriendsItem';
 import { ArrowDownward, ArrowUpward } from '@material-ui/icons'
 
 function FriendsView() {
-    const friends = ["Diego", "Gus", "Pedro", "Steven","RJ","A","b","c"]
+    const friends = ["Diego", "Gus", "Pedro", "Steven","RJ","A","b","c","Diego", "Gus", "Pedro", "Steven","RJ","A","b","c","Diego", "Gus", "Pedro", "Steven","RJ","A","b","c"]
     const [topScroll, setTopScroll] = React.useState<boolean>(false)
     const [bottomScroll, setBottomScroll] = React.useState<boolean>(false)
     const FriendsViewEl = document.getElementsByClassName("FriendsView")
@@ -31,7 +31,7 @@ function FriendsView() {
 
     const scrollBottom = () => {
         let element = (FriendsViewEl[0] as Element)
-        element.scrollTop = element.clientHeight
+        element.scrollTop = friends.length * 140
     }
 
     const scrollTop = () => {

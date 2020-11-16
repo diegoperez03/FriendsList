@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import FriendsView from './Components/FriendsView'
+import Home from './Components/Home'
 import Login from './Components/Login'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       {
         isUserLoggedIn ?
-          <FriendsView /> :
+          <Home /> :
           <Login />
       }
     </div>
